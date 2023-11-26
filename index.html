@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeAPI</title>
+    <link rel="icon" href="/images/pokeball.png" />
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="main-head">
+        <img src="/images/legendary monsters.webp" alt="" />
+      </div>
+    </header>
+    <section class="card-carousel">
+      <div class="poke-buttons">
+        <button id="left"class="ctrl-button">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <div class="reset">
+          <div class="reset-button"> 
+            <i class="fa-solid fa-x"></i>
+            </div>
+            <h3 class="reset-label">Reset</h3>
+        </div>
+        
+        <button id = "add-favorite-button">
+          <div class="poke-ball-design-1"></div>
+          <div class="poke-ball-design-2"></div>
+          <div class="poke-ball-design-3"></div>
+          <div class="poke-ball-design-4"></div>
+        </button>
+        <div class="deck-container">
+          <div class="my-deck"><i class="fa-solid fa-layer-group"></i></div>
+        <h3 class="deck-label">My Deck</h3>
+      </div>
+        <button id="right" class="ctrl-button"> 
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <h3>Click Pokeball to capture</h3>
+      
+    </section>
+    <section class="poke-cards">
+      <div class="poke-item  fire active">
+        <div class="card-header">
+            <div class="poke-name">New Adventure</div>
+            <div class="right-side">
+                <div class="poke-hp">Infinite</div>
+                <div class="poke-type"><img src="/images/type-icons/trophy.png" alt="icon"></div>
+            </div>
+        </div>
+        <div class='poke-img'> 
+            <a href="/pokemon_Cosmic/game.html"><img src="/images/preview.JPG" alt="pokemon img"></a>
+        </div>
+        <div class="img-subhead">
+            <div class="species">game</div>
+            <div class="length">Infinite </div>
+            <div class="weight">Infinite </div>
+        </div>
+        <div class="ability">
+            <div class="poke-type"><img src="/images/type-icons/trophy.png" alt="icon"></div>
+            <div class="ability-descript"><h4 class="ability-name">Pokemon-Champion Islands (Alpha)</h4> <br>Click the picture above to start your own adventure  CTRLS : W,S,A,D</div>
+            
+        </div>
+    </div>
+    </section>
+
+    <div class="modal">
+      <div id="pop-up" class = "background ">
+        <div class="top-bar">
+          <h4> My Deck</h4>
+          <div class = "sort">
+            <div>Sort</div>
+            <i class="fa-solid fa-arrow-down-a-z"></i>
+          </div >
+          <div id="exit">
+            <i class="fa-solid fa-xmark "></i>
+          </div>
+          
+        </div>
+        <div class="fav-container"></div>
+        <div class="type-info">
+          <div class="type">
+            <div>Water Types: </div>
+            <div class="type-count" id = "water">0</div>
+          </div>
+          <div class="type"><div>Fire Types: </div>
+          <div class="type-count" id = "fire">0</div>
+        </div>
+          <div class="type"><div>Electric Types: </div>
+          <div class="type-count" id = "electric">0</div>
+        </div>
+          <div class="type"><div>Grass Types: </div>
+          <div class="type-count" id = "grass">0</div>
+        </div>
+          <div class="type"><div>Normal Types: </div>
+          <div class="type-count" id = "normal">0</div>
+        </div>
+          <div class="type"><div>Fighting Types: </div>
+          <div class="type-count" id = "fighting">0</div>
+        </div>
+          <div class="type"><div>Fairy Types: </div>
+          <div class="type-count" id = "fairy">0</div>
+        </div>
+          <div class="type"><div>Poison Types: </div>
+          <div class="type-count" id = "poison">0</div>
+        </div>
+          <div class="type"><div>Psychic Types: </div>
+          <div class="type-count" id = "psychic">0</div>
+        </div>
+        <div class="type"><div>Ground Types: </div>
+          <div class="type-count" id = "ground">0</div>
+        </div>
+        <div class="type"><div>Bug Types: </div>
+          <div class="type-count" id = "bug">0</div>
+        </div>
+        <div class="type"><div>Rock Types: </div>
+          <div class="type-count" id = "rock">0</div>
+        </div>
+        
+        </div>
+      </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/5bdf91ed2b.js" crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
